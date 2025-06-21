@@ -15,15 +15,17 @@
     <script src="https://kit.fontawesome.com/d2d193a158.js" crossorigin="anonymous"></script>
 </head>
 <body style="background-color: #0d3639;">
+
 <!-- Loading page -->
     <!-- <div class="loader">
         <h2><i class="fa-solid fa-lungs loader-lungs"></i>pulmavest<sup>tm</sup><i class="fa-solid fa-lungs loader-lungs"></i></h2>
     </div> -->
 <!-- Front page -->
+
     <section class="hero">
-        <div class="m-4">
-            <nav class="navbar p-0 navbar-expand-lg bg-light">
-                <div class="container-fluid" style="background-color: #0d3639;">
+        <div>
+            <nav class="navbar p-0 navbar-expand-lg" >
+                <div class="container-fluid" style="background-color: #0d3639; height: 15vh;">
                     <a href="#" class="navbar-brand" style="color: #C0750B;">Pulmavest</a>
                         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
@@ -56,10 +58,20 @@
         
         
         </header>
-        <div class="hero-text">
+        <!-- <div class="hero-text">
             <h1>Non-Invasive.&nbsp;&nbsp;&nbsp;Insightful.&nbsp;&nbsp;&nbsp;Immediate.</h1>
             <p>Our vest provides a rapid diagnostic Point Of Care Test using microwave imaging for the early diagnosis of PE.</p>
             <a href="#Information">Explore now</a>
+        </div> -->
+        <div class="hero-text" >
+            <div class="d-flex fs-2 lh-lg flex-column flex-md-row text-center text-md-start" style="padding-top: 12vh;">
+            <span class="me-md-3">Non-Invasive.</span>
+            <span class="me-md-3">Insightful.</span>
+            <span>Immediate.</span>
+            </div>
+            <div  class="d-none d-md-block">Our vest provides a rapid diagnostic Point Of Care Test using microwave imaging for the early diagnosis of PE.</div>
+            
+            <button style="background-color: #C0750B; margin-top: 5vh; border-color: none; color:white" type="button" class="btn " href="#Information">Explore now</button>
         </div>
     </section>
     <section id="Information" class="info">
@@ -86,27 +98,37 @@
 
         <div class="container my-5">
         <div class="row text-center">
+            
             <div class="col-md-4 mb-4">
             <div class="p-4 text-white rounded-3 shadow-sm h-100" style="background-color: #C0750B;">
-                <i class="fa-solid fa-skull fa-xl"></i>
-                <h2 class="display-5 fw-bold mb-2">37.9%</h2>
-                <p class="mb-0 text-white-50">of patients which died in intensive care and underwent autopsy were found to have PE missed</p>
+                <i class="fa-solid fa-skull fa-lg mb-2"></i>
+                <h2 class="fw-bold fs-3 mb-2">37.9%</h2>
+                <p class="mb-0 text-white-50 fs-6">
+                of patients which died in intensive care and underwent autopsy were found to have PE missed
+                </p>
             </div>
             </div>
+            
             <div class="col-md-4 mb-4">
             <div class="p-4 text-white rounded-3 shadow-sm h-100" style="background-color: #C0750B;">
-                <i class="fa-solid fa-hospital fa-xl"></i>
-                <h2 class="display-5 fw-bold mb-2">35,845</h2>
-                <p class="mb-0 text-white-50">hospital admissions for PE between 2022-2023 in England</p>
+                <i class="fa-solid fa-hospital fa-lg mb-2"></i>
+                <h2 class="fw-bold fs-3 mb-2">35,845</h2>
+                <p class="mb-0 text-white-50 fs-6">
+                hospital admissions for PE between 2022–2023 in England
+                </p>
             </div>
             </div>
+            
             <div class="col-md-4 mb-4">
             <div class="p-4 text-white rounded-3 shadow-sm h-100" style="background-color: #C0750B;">
-                <i class="fa-solid fa-person fa-2xl"></i>
-                <h2 class="display-5 fw-bold mb-2">10,000,000</h2>
-                <p class="mb-0 text-white-50">diagnosed cases of DVT and PE globally per year</p>
+                <i class="fa-solid fa-person fa-lg mb-2"></i>
+                <h2 class="fw-bold fs-3 mb-2">10,000,000</h2>
+                <p class="mb-0 text-white-50 fs-6">
+                diagnosed cases of DVT and PE globally per year
+                </p>
             </div>
             </div>
+
         </div>
         </div>
 
@@ -147,7 +169,7 @@ Colour-coded images are formed from data by tomographic reconstruction algorithm
 AI based algorithm with Machine Learning detects the presence and location of the pulmonary embolism.
             </p>
         </div>
-        <div class="the-design">
+        <!--<div class="the-design">
             <h3>The Design</h3>
             <div class="cards">
                 <div class="card">
@@ -159,7 +181,46 @@ AI based algorithm with Machine Learning detects the presence and location of th
                     <h5>Pulmavest interior</h5>
                 </div>
             </div>
+        </div> -->
+
+        <div class="container my-5">
+        <h3 class="text-center mb-5 fw-bold display-6" style="color: #C0750B">The Design</h3>
+        
+        <div class="row g-4 justify-content-center">
+            
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-5">
+            <div class="border-0 shadow-lg rounded-4 overflow-hidden h-100 transition hover-shadow" style="background-color: #C0750B;">
+                <img src="Pulmavest-exterior.png" alt="Pulmavest exterior" class="img-fluid w-100">
+                <div class="p-4 text-center">
+                <h5 class="fw-semibold text-light">Pulmavest Exterior</h5>
+                <p class="mb-0 text-light">A sleek view of the outer design with modern contours and detail.</p>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-5">
+            <div class="border-0 shadow-lg rounded-4 overflow-hidden h-100 transition hover-shadow" style="background-color: #C0750B;">
+                <img src="Pulmavest-interior-img.png" alt="Pulmavest interior" class="img-fluid w-100">
+                <div class="p-4 text-center">
+                <h5 class="fw-semibold text-light">Pulmavest Interior</h5>
+                <p class="mb-0 text-light">An inside look at the advanced structure and refined design.</p>
+                </div>
+            </div>
+            </div>
+
+            <style>
+            .hover-shadow:hover {
+                box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+                transform: translateY(-2px);
+                transition: all 0.3s ease-in-out;
+            }
+            </style>
+
         </div>
+</div>
+
     </section>
     <footer>
 

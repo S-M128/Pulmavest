@@ -3,9 +3,9 @@ Biology Imperial Project
 
 
 TO DO:
- -Responsive
- -*Potentially* transfer code to next.js framework
- -Colours and Animations (Need set colour palatte)
+ -change font colour of second div
+ -create footer
+ -finalise colours
 
 Dimensions:
  -Computer: > 820x1180
