@@ -1,0 +1,360 @@
+body {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a {
+    font-style: normal;
+    color: black;
+    text-decoration: none;   
+}
+
+ul {
+   list-style-type: none; 
+}
+
+.align-right {
+    text-align: right;
+}
+
+/* Loader style */
+
+/* .loader {
+    position:absolute;
+    z-index: 5;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(blob-scene-haikei.svg);
+}
+
+.loader h2{
+   font-size: 3vw;
+   font-weight: 800;
+   text-transform: uppercase;
+   color: white;
+   animation-name: loading-color-shift;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+
+.loader-lungs{
+    padding: 1em;
+}
+
+.loader sup {
+    font-size: 50%;
+}
+
+@keyframes loading-color-shift {
+    0% {color: white;
+        font-size: 3.5vw;
+    } 
+    25% {color:#fcaf3c;
+        font-size: 3vw;
+    }
+    50% {color:#d65e64;
+        font-size: 3.5vw;
+    }
+    75% {color:#97446e;
+        font-size: 3vw;
+    }
+    100% {color: white;
+        font-size: 3.5vw;
+    }   
+} */
+
+/* Hero */
+.hero {
+    background-image:url(PE-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.nav-bar:hover {
+    background-color:#0d3639;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.logo a{
+    text-transform: uppercase; 
+    font-weight: 800 ; 
+    font-size: 1.5em;
+    color: white;
+}
+
+.nav-bar a:hover{
+    color: orange;
+    transition: 0.3s;
+}
+
+.nav-lungs {
+    padding: 1em;
+    color: orange;
+}
+
+.links { 
+    margin-right: 1em;
+}
+
+.links li{
+    display: inline-block;
+    padding: 1em 1.5em;
+}
+
+.links li a{
+    color: white;
+    font-weight: 600;
+}
+
+.hero-text{
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 10vw;
+}
+
+
+.hero-text h1{
+    color: white;
+    text-transform: capitalize;
+    font-size: 2.75vw;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.hero-text p{
+    color: white;
+    font-size: 1.15em;
+    text-align: center;
+}
+
+.hero-text a {
+    margin-top: 4%;
+    color: white;
+    padding: 25px 30px;
+    background-color: rgb(212, 135, 33);
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 1.15em;
+}
+
+.hero-text a:hover {
+    background-color: #0d3639;
+    transition: 0.3s;
+}
+
+/* Information */
+
+.info{
+    margin: 0;
+    padding: 0;
+}
+/* What is PE */
+
+.pe-definition {
+    /* background-image:url(blurry-gradient-haikei.svg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    background-image: linear-gradient(#5a5d5f, black);
+    padding: 10% 10% 7%;
+}
+
+.info h3 {
+    margin-top: 0;
+    font-size: 3em;
+    font-family: serif;
+}
+
+.info-para {
+    margin-bottom: 0;
+    font-size: 2em;
+    font-family: serif;
+    padding-top: 4vh;
+}
+
+span {
+  color: white;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.2;
+}
+
+/* .the-problem {
+    background-image:url(blur-orange.svg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 7% 10% 7%;
+} */
+
+/* Stats */
+
+.stats-bar{
+    padding: 5% 8% 4%;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(stats-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color:#0d3639;
+    background-blend-mode: multiply;
+    color: white;
+    text-align: center;
+
+}
+
+.stat{
+    width: 25%;
+}
+
+.stat-description {
+    font-size: 1rem;
+    line-height: 2em;
+}
+
+.stat-number{
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.stat i{
+    font-size: 4em;
+}
+
+/* Our solution */
+
+
+.our-solution {
+    /* background-image:url(blur-burgunday.svg); */
+    background-image: linear-gradient(#642e47,black );
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    padding: 7% 10% 10%;
+}
+
+/* How the vest works*/
+
+.how-vest-works-1 {
+    height: 100vh;
+    background-image: url(background-vest-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    padding: 30vh 10%; 
+}
+
+
+.how-vest-works-1 h2 {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 3.5em;
+    line-height: 1.5em;
+    color: white;
+}
+
+.how-vest-works-2 {
+    background-image: linear-gradient(#656161, black);
+    padding: 6% 10% 7%;
+}
+
+.how-vest-works-2 p {
+    margin: 0;
+    font-size: 2em;
+    font-family: serif;
+    line-height: 1.5em;
+}
+
+/* The design */
+
+.the-design {
+    background-image:url(stacked-waves-haikei.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5% 10%;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 7% ;
+
+}
+
+.card {
+    width: 25%;
+    aspect-ratio: 2/2;
+    background-color: rgb(122, 122, 122);
+    box-shadow: 0 11px 8px 0 rgba(255, 254, 254, 0.2);
+}
+
+.card h5{
+    padding: 2% 8%;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.cards img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+
+footer {
+    background-color:#0d3639;
+    height: 40vh;
+}
+
+
+
+/* Poster page */
+
+.poster img {
+    height: 100vh;
+}
+
+
+
+    
