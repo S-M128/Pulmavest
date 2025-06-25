@@ -908,16 +908,17 @@ span {
 footer {
     background-color:black;
     height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-
-/* Poster page */
-
-.poster img {
-    height: 100vh;
+.back-to-the-top a{
+    font-size: 2rem;
+    color: white;
+    font-family: serif;
+    font-weight: 700;
 }
-
 
     
     
