@@ -754,12 +754,12 @@ span {
 /* The actual timeline (the vertical ruler) */
 
 .timeline-container{
-    padding: 50px 10px;
+    padding: 40px 10px 50px;
 
 }
 
 .timeline-container h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-bottom: 90px;
     font-family: serif;
