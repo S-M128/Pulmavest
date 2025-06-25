@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulmavest</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="Pulmavest, Pulmonary, Embolism, Microwave, Imaging, Vest">
+    <meta name="author" content="">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d2d193a158.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Loading page -->
+    <!-- <div class="loader">
+        <h2><i class="fa-solid fa-lungs loader-lungs"></i>pulmavest<sup>tm</sup><i class="fa-solid fa-lungs loader-lungs"></i></h2>
+    </div> -->
+<!-- Front page -->
+    <section class="hero">
+        <div class="scroll-watcher"></div>
+        <header class="nav-bar">
+            <div class="logo">
+                <a href="#"><i class="fa-solid fa-lungs nav-lungs"></i>pulmavest<sup>tm</sup></a>
+            </div>
+        </header>
+        <div class="hero-text">
+            <h1><span>Non-Invasive.</span>&nbsp;&nbsp;&nbsp;<span>Insightful.</span>&nbsp;&nbsp;&nbsp;<span>Immediate.</span></h1>
+            <p>Our vest provides a diagnostic Point Of Care Test using MWI for the early diagnosis of PE.</p>
+            <a href="#Information">Explore now</a>
+        </div>
+    </section>
+    <section id="Information" class="info">
+        <div class="pe-definition">
+            <h3>What is a Pulmonary Embolism?</h3>
+            <p class="align-left reveal-type info-para">PE is a life-threatening condition in which a blood clot - an embolus originating and
+                travelling from a thrombosed deep vein (DVT) blocks one or more of the pulmonary
+                arteries impairing the oxygenation of the blood by the lungs. Symptoms include
+                sudden breathing difficulty, coughing up blood, and chest pain. Larger emboli can
+                potentially cause strain on the right ventricle due to resistance to pumping blood and
+                could potentially result in a fatal, sudden cardiac arrest. 
+            </p>
+        </div>
+        <div class="stats-bar">
+            <div class="stat stat-card-1">
+                <i class="fa-solid fa-skull"></i>
+                <p class="stat-number">37.9%</p>
+                <p class="stat-description">of patients which died in intensive care and underwent autopsy were found to have PE missed</p>
+            </div>
+            <div class="stat stat-card-2">
+                <i class="fa-solid fa-hospital"></i>
+                <p class="stat-number">35,845</p>
+                <p class="stat-description">hospital admissions for PE between 2022-2023 in England</p>
+            </div>
+            <div class="stat stat-card-3">
+                <i class="fa-solid fa-person"></i>
+                <p class="stat-number">10,000,000</p>
+                <p class="stat-description">diagnosed cases of DVT and PE globally per year</p>
+            </div>
+        </div>
+        <div class="our-solution">
+            <h3 class="align-right">Our solution</h3>
+            <p class="reveal-type info-para align-right">We’ve developed a lightweight, portable microwave imaging vest as a fast, affordable alternative to costly CTPA scans for diagnosing pulmonary embolism. The vest serves as a simple point-of-care (POCT) device that can allow for early, accessible detection of Pulmonary Embolism (PE) without ionising radiation or delays - this would ultimately improve outcomes for both patients and doctors, revolutionsing lung imaging. In emergency settings, where every minute is crucial, increasing the speed of diagnoses would turn lost time into saved lives. As well as this, missed or delayed diagnoses can be fatal; in primary care settings, atypical presentations of PE are often missed - our device would aim to combat this issue, offering GPs a more advanced diagnostic tool kit to make referrals easier.  </p>
+        
+        </div>
+        <div class="how-vest-works-1">
+            <h2>So,<br> how does PULMAVEST<sup>TM</sup> work?</h2>
+        </div>
+        <div class="how-vest-works-2">
+            <p>
+                Microwaves emitted by a set of antennae placed around the vest are scattered due to the tissue’s dielectric properties. Clot tissue, oedema and lack of perfusion - localised signs of PE - all lead to distinctive changes in the dielectric properties of the parenchyma. The Vector Network Analyser (VNA) gives microwave absorption, transmission and reflection values, which are then used to calculate the tissue's dielectric constant via an AI based software. These values are used to construct the scattering matrix. Colour-coded images are formed from data by tomographic reconstruction algorithms with comparison to a ‘phantom’ model of healthy lungs. AI based algorithms with Machine Learning detects the presence and location of the clot.
+            </p>
+        </div>
+        <div class="the-design">
+            <h3>The Design</h3>
+            <div class="cards">
+                <div class="card">
+                    <img src="Pulmavest-exterior.png" alt="Pulmavest exterior">
+                    <div class="card-description">
+                        <h5>Pulmavest exterior</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Pulmavest-interior-img.png" alt="Pulmavest interior">
+                    <div class="card-description">
+                        <h5>Pulmavest interior</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-container">
+            <h2> Development Roadmap</h2>
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+                        <h3>Phantom chest</h3>
+                        <p>The prototype vest is calibrated against calf lungs in a liquid mixture to imitate the dielectric properties of the chest.</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h3>Machine Learning (ML) Training</h3>
+                        <p>A large random sample of consenting hospital patients with and without PE are used to test the accuracy.
+                        The results are compared to a CTPA scan,  and clinicians label the blood clot on the MWI.
+                        The large data set is used to train a ML algorithm</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h3>Accuracy Testing</h3>
+                        <p>The ML algorithm is tested on unfamiliar scans, using samples with a lower, the same or higher PE proportion to guarantee accuracy. If the vest has an accuracy of above 95% and passes statistical analysis - it is ready for the next trial. </p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h3>Testing in Practice</h3>
+                        <p>A&E and GP practices are given the device which is used to test on suspected PE - with healthcare professionals providing feedback. If the MWI scans consistently align with the CTPA hospital scans, the device is ready to be used</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h3>Quality Certification</h3>
+                        <p>The device must be certified by the Medicines and Healthcare products Regulatory Agency (MHRA) and  and an endorsement from NICE Medical Technologies Evaluation Programme (MTEP) could streamline device adoption. Introducing it to NHS Health Innovation Network (HIN) would help with integration</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h3>Distribution</h3>
+                        <p>The device is listed on the market after company registration. Bulk deals could be secured with private buyers, e.g. airports. Deals are signed with ICBs to sell the devices at affordable prices to GPs and care homes - mediated by the PCNs. At the same time, compatible software is added to the NHS for seamless integration (28)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis"></script>
+    <script src="function.js"></script>
+
+</body>
+</html>
