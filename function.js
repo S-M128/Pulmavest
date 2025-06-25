@@ -7,32 +7,36 @@
 //    }, 2000); 
 //  });
 
-let paragraphs = [...document.querySelectorAll('.reveal-type')];
-let spans = [];
+//Reveal Text
 
-paragraphs.forEach(paragraph => {
-  let htmlString = '';
-  let pArray = paragraph.textContent.split('');
-  for (let i = 0; i < pArray.length; i++) {
-    htmlString += `<span>${pArray[i]}</span>`;
-  }
-  paragraph.innerHTML = htmlString;
-});
+gsap.registerPlugin(ScrollTrigger);
 
-spans = [...document.querySelectorAll('span')];
+const splitTypes = document.querySelectorAll('.reveal-type')
 
-function revealSpans() {
-  for (let i = 0; i < spans.length; i++) {
-    let { left, top } = spans[i].getBoundingClientRect();
-    top = top - (window.innerHeight * 0.8);
-    
-    // Calculate opacity safely
-    let rawOpacity = 1 - ((top * 0.01) + (left * 0.001));
-    let opacityValue = Math.min(Math.max(rawOpacity, 0.1), 1); // Clamp between 0.1 and 1
+splitTypes.forEach((char,i) => {
+    const text = new SplitType(char, {types:'chars,words'})
 
-    spans[i].style.opacity = opacityValue.toFixed(3);
-  }
+    gsap.from(text.chars, {
+      scrollTrigger: {
+        trigger: char,
+        start: 'top 80%',
+        end: 'top 20%' ,
+        scrub: true,
+        markers: false
+      },
+      opacity: 0.2,
+      stagger: 0.1,
+    })
+})
+
+
+//Smooth scroll
+
+const lenis = new Lenis();
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+lenis.raf(time);
+requestAnimationFrame(raf);
 }
-
-window.addEventListener('scroll', revealSpans);
-revealSpans();
+requestAnimationFrame(raf);
